@@ -1,0 +1,12 @@
+---
+title: "R Markdown and Leaflet Prototype"
+author: "Jeff Shepherd"
+date: "Thursday, October 27, 2016"
+output: html_document
+---
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=50.720, lng= -3.53, popup="Home town")
+my_map
+```
